@@ -17,14 +17,16 @@ require('dotenv').config();
 app.use(bodyParser.json());
 
 // frontend
-app.use(
-    cors({
-        origin:"https://image-hub-psi.vercel.app",
-        credentials: true,
-        methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-        allowedHeaders: "Content-Type,Authorization",
-    })
-);
+// app.use(
+//     cors({
+//         origin:"https://image-hub-psi.vercel.app",
+//         credentials: true,
+//         methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+//         allowedHeaders: "Content-Type,Authorization",
+//     })
+// );
+
+app.use(cors());
 
 
 app.use(cookieParser());
