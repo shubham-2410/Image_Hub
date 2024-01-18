@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 // frontend
 app.use(
     cors({
-        origin:"http://localhost:3000",
+        origin:"https://image-hub-psi.vercel.app",
         credentials: true,
         methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
         allowedHeaders: "Content-Type,Authorization",
