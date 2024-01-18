@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 // frontend
 app.use(
     cors({
-        origin:"*",
+        origin:["http://localhost:3000", "https://imagehub-backend-adk6.onrender.com"],
         credentials: true,
         methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
         allowedHeaders: "Content-Type,Authorization",
