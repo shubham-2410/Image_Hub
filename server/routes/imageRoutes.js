@@ -10,9 +10,9 @@ const {
 const {auth} = require('../middleware/auth');
 
 
-imageRoute.get('/get-all' , auth , getImages);
-imageRoute.post('/upload' , auth , uploadImage);
-imageRoute.put('/count' ,auth ,  updateCount);
+imageRoute.get('/get-all' , getImages);
+imageRoute.post('/upload' ,uploadImage);
+imageRoute.put('/count' , updateCount);
 
 
 module.exports = imageRoute;
