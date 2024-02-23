@@ -1,10 +1,6 @@
 const jwt = require("jsonwebtoken");
 require('dotenv').config();
 
-
-// not used yet , it validate the token and add essential details to user.body which can be utilized further 
-
-
 const auth = async (req , res , next)=>{
 
     try {

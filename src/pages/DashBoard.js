@@ -4,7 +4,7 @@ import toast from 'react-hot-toast';
 import { useDispatch } from 'react-redux';
 import { uploadImage, viewGallery } from '../services/operaions/imageAPI';
 import { useNavigate } from 'react-router-dom';
-import { session } from '../services/operaions/authAPI';
+// import { session } from '../services/operaions/authAPI';
 
 const DashBoard = () => {
   const {
